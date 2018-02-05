@@ -26,11 +26,11 @@ header{
     background: #d5c75f;
 }
 footer{
-    margin: 0 auto;
     width: 100%;
     height: 20%;
     background: #C6d5c5;
     border-radius: 0 0 10px 10px;
+    text-align: left;
 }
 
 /*=================etiquetas secundarias===================*/
@@ -41,6 +41,7 @@ ul{
     display: inline-flex;
 }
 li{
+    align-self: center;
     list-style: none;
     padding: 5px;
 }
@@ -68,6 +69,8 @@ nav a{
 .image #retrato:hover{
     transform: translate( 20px, -5px);
 }
+
+/*xxxxxxfooterxxxxxx*/
 .contactos{
     display: block;
 }
@@ -83,10 +86,18 @@ nav a{
 .footer_Header{
     font-size: 1.5em;
 }
+.redes_Sociales img{
+    width: 15px;
+    height: 15px;
+}
 /*==================Media Querys==================*/
 @media (min-width:320px) and (max-width: 900px){
     .contenido{
         width: 100%;
+        text-align: center;
+        animation-name: slidein-animacion;
+        animation-duration: 2s;
+        
     }
     header{
         width: 100%;
@@ -100,6 +111,15 @@ nav a{
     }
     .image img{
         width: 100%;
+        
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: flex-start;
+        text-align: left;
+        align-items: flex-start;
     }
 }
 @media screen and (min-width: 901px){
@@ -112,6 +132,8 @@ nav a{
         text-align: center;
         align-content: center;
         justify-content: center;
+        animation-name: slidein-animacion;
+        animation-duration: 2s;
     }
     header{
         width: 100%;
@@ -135,6 +157,7 @@ nav a{
         margin: 0 auto;
         display: flex;
         align-items: center;
+        flex-direction: row;
     }
     #paisaje_Filtros img{
         width: 100%;
@@ -151,5 +174,18 @@ nav a{
     
     .image img{
         width: 80%;
+    }
+}
+
+/*=============================keyframes======================================*/
+@keyframes slidein-animacion {
+    0%{
+        margin-top: 150%;
+    }
+    60%{
+        margin-top: -5%;
+    }
+    100%{
+        margin-top: 0%;
     }
 }
