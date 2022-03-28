@@ -2,8 +2,9 @@
 ==============================README=============================
 =================================================================
 
-V.1.- inicio del proyecto, documentos iniciales, contiene varios errores a corregir y falta de contenido.
+V.1.- Initial documents & Beginning of project with less content and a lot of bugs.
 
-V.2.- corregidos los errores de renderizacion en los media querys, mejor aspecto en renderizado movil.
+V.2.- Fixed bugs of media querys in rederization & better aspect on mobile layout's.
 
-V.3.- agregados logos de redes sociales, correccion de alineado de texto y dado por terminado el proyecto.
+V.3.- Social media logos added, fixin of text align & finish of project .
+      
